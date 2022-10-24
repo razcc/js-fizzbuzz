@@ -1,3 +1,24 @@
 .bg-color-custom{
     background-color: rgb(8, 59, 76);
 }
+
+.box{
+    width: calc((100% / 9) - 5px);
+    aspect-ratio: 1/1;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+
+}
+
+.box--Fizz{
+background-color: blueviolet;
+}
+.box--Buzz{
+background-color: lightgreen;
+}
+.box--FizzBuzz{
+    background-color: lightcoral;
+}

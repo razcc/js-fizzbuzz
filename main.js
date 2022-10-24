@@ -1,32 +1,32 @@
 
 function creaSerie() {
 
-    let div = document.getElementById("printNumber");
+    let printNumber = document.getElementById("printNumber");
 
     for (let i = 0; i <= 100; i++) {
         console.log(i)
         
-        if ( i % 3 === 0) {
-            let i= "Fizz"
-            console.log(i)
-            div.innerHTML += i;
-            
+        if (i % 5 == 0 && i % 3 == 0) {
+            let variabile= "FizzBuzz";
+            printNumber.innerHTML += `<div class="box box--${variabile}">${variabile}</div>`;
+            console.log(variabile);  
         }
-        else if (i % 5 === 0) {
-            let i= "Buzz"
-            console.log(i)
-            div.innerHTML += i;
-           
+        else if (i % 5 == 0) {
+          
+            let variabile= "Buzz";
+            printNumber.innerHTML += `<div class="box box--${variabile}">${variabile}</div>`;
+            console.log(variabile);  
         }
-        else if ( i % 15 === 0) {
-            let i= "FizzBuzz"
-            console.log(i)
-            div.innerHTML += i;
+        else if ( i % 3 == 0  ) {
+            let variabile= "Fizz";
+            printNumber.innerHTML += `<div class="box box--${variabile}">${variabile}</div>`;
+            console.log(variabile);  
             
         }
         else{
           
-            div.innerHTML += `<p>${i}</p>`;
+           printNumber.innerHTML += `<div class="box">${i}</div>`;
+           console.log(i)
         }
     }
     
